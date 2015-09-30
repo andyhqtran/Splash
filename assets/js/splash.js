@@ -37,6 +37,6 @@ $(document).ready(function () {
     e.preventDefault();
     $('.sp-overlay').fadeOut();
 
-    $('.sp-form').fadeOut().removeClass('visible');
+    $(this).parent('.sp-form-header').parent('.sp-form').fadeOut().removeClass('visible');
   });
 });
