@@ -50,7 +50,7 @@
           ]
         },
         dev: {
-          src: 'css/*.css'
+          src: 'assets/css/*.css'
         }
       },
 
