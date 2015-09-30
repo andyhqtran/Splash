@@ -6,6 +6,12 @@
     grunt.initConfig({
       pkg: grunt.file.readJSON('package.json'),
 
+      clean: {
+        html: '*.html',
+        cache: '.sass-cache',
+        npm: 'node_modules'
+      },
+
       connect: {
         server: {
           options: {
