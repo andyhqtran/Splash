@@ -1,10 +1,12 @@
 # Splash
 Splash is a simple pop-in contact form that can positioned in any of the four corners.
 
+![Form Preview](assets/img/form.png)
+
 ## Requirements
 * jQuery 2.1.3 or above - https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js
 
-## Structure
+## File Structure
 ```
 dir/
 	assets/
