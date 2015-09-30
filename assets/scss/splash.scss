@@ -37,7 +37,7 @@ $gutters: 20px;
   // Button
   &-button {
     z-index: 50;
-    position: absolute;
+    position: fixed;
 
     // Default Position
     right: 30px;
