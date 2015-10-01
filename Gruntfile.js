@@ -7,7 +7,8 @@
       pkg: grunt.file.readJSON('package.json'),
 
       clean: {
-        html: '*.html',
+        html: '{*/,*/*/,*/*/*/}*.html',
+        css: ['{*/,*/*/,*/*/*/,*/*/*/*/}*.css', '{*/,*/*/,*/*/*/,*/*/*/*/}*.map'],
         cache: '.sass-cache',
         npm: 'node_modules'
       },
@@ -84,11 +85,11 @@
           }
         },
         sass: {
-          files: '*/*/*.{scss,sass}',
+          files: '{*/,*/*/,*/*/*/}*.{scss,sass}',
           tasks: ['sass', 'postcss', 'cssmin'],
         },
         jade: {
-          files: '*.jade',
+          files: '{*/,*/*/,*/*/*/}*.jade',
           tasks: ['jade'],
         }
       }

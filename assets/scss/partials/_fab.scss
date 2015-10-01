@@ -57,8 +57,8 @@
     animation: 1s fabSlideInBottom ease;
   }
 
-  &[data-animation='slideInBottom'] {
-    animation: 1s fabSlideInBottom ease;
+  &[data-animation='slideInLeft'] {
+    animation: 1s fabSlideInLeft ease;
   }
 
   &[data-animation='scaleIn'] {
