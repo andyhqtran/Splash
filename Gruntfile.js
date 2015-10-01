@@ -60,6 +60,18 @@
         }
       },
 
+      cssmin: {
+        options: {
+          shorthandCompacting: false,
+          roundingPrecision: -1
+        },
+        dev: {
+          files: {
+            'assets/css/splash.min.css': 'assets/css/splash.css'
+          }
+        }
+      },
+
       watch: {
         options: {
           livereload: true,
@@ -73,7 +85,7 @@
         },
         sass: {
           files: '*/*/*.{scss,sass}',
-          tasks: ['sass', 'postcss'],
+          tasks: ['sass', 'postcss', 'cssmin'],
         },
         jade: {
           files: '*.jade',
