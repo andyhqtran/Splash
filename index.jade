@@ -2,70 +2,12 @@ doctype html
 html
 	head
 		title Splash - Contact Popup Widget
-		link(type='text/css'
-    		 media='screen'
-    		 rel='stylesheet'
-    		 href='assets/css/splash.css')
-
-		// Custom Styles
-		style.
-			body {
-				font-family: 'Open Sans', sans-serif;
-			  -webkit-font-smoothing: antialiased;
-			  -moz-osx-font-smoothing: grayscale;
-			}
-
 	body
-		// Splash Button
-		a.sp-button(href='#form-name'
-								data-ripple='true'
-								data-ripple-color='#fff'
-								data-posX='left'
-								data-posY='top') Contact
 
-		// Overlay
-		.sp-overlay
-
-		// Form
-		form.sp-form#form-name(data-animation='fadeIn')
-			// Header
-			.sp-form-header Contact Me
-				a.sp-close(href='#')
-			// Row
-			.sp-form-row
-				// Input
-				input.sp-form-input(type='text'
-													  placeholder='First Name'
-													  required)
-				// Input
-				input.sp-form-input(type='text'
-													  placeholder='Last Name'
-													  required)
-			// Row
-			.sp-form-row
-				// Input
-				input.sp-form-input(type='text'
-													  placeholder='Email'
-													  required)
-			// Row
-			.sp-form-row
-				// Input
-				input.sp-form-input(type='text'
-													  placeholder='Phone Number'
-													  required)
-			// Row
-			.sp-form-row
-				// Textarea
-				textarea.sp-form-textarea(type='text'
-																  placeholder='Insert your message here...'
-																  required)
-			// Row
-			.sp-form-row
-				// Submit Button
-				button.sp-form-button(type='submit'
-															data-ripple='true'
-															data-ripple-color='#fff') Send Message
-
-		// jQuery
-		script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')
 		script(src='assets/js/splash.js')
+		// Splash Settings
+		script.
+			splashButtonPosX = 'right'; // left, right
+			splashButtonPosY = 'top'; // top, bottom
+			splashButtonAnimation = 'scaleIn' // slideInTop, slideInRight, slideInBottom, slideInLeft, scaleIn
+			splashFormAnimation = 'scaleIn'; // slideInTop, slideInRight, slideInBottom, slideInLeft, scaleIn, fadeIn, flipInX, flipInY

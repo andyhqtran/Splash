@@ -1,0 +1,71 @@
+// FAB
+&-fab {
+  z-index: 50;
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  outline: 0;
+  display: inline-block;
+  background: $fab-color;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  color: map-get($white, 100);
+  font-weight: $regular;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transform-origin: center;
+  transition: 0.3s ease;
+  cursor: pointer;
+
+  @include elevation(1);
+
+  &:hover {
+    @include elevation(3);
+  }
+
+  &[data-posY='top'] {
+    top: 24px;
+    bottom: auto;
+  }
+
+  &[data-posY='bottom'] {
+    top: auto;
+    bottom: 24px;
+  }
+
+  &[data-posX='right'] {
+    right: 24px;
+    left: auto;
+  }
+
+  &[data-posX='left'] {
+    right: auto;
+    left: 24px;
+  }
+
+  &[data-animation='slideInTop'] {
+    animation: 1s fabSlideInTop ease;
+  }
+
+  &[data-animation='slideInRight'] {
+    animation: 1s fabSlideInRight ease;
+  }
+
+  &[data-animation='slideInBottom'] {
+    animation: 1s fabSlideInBottom ease;
+  }
+
+  &[data-animation='slideInBottom'] {
+    animation: 1s fabSlideInBottom ease;
+  }
+
+  &[data-animation='scaleIn'] {
+    animation: 1s fabScaleIn ease;
+  }
+
+  .material-icons {
+    line-height: 48px;
+  }
+}

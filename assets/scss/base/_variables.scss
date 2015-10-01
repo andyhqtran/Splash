@@ -2,7 +2,7 @@
 $thin: 100;
 $light: 300;
 $regular: 400;
-$semibold: 600;
+$semibold: 500;
 $bold: 700;
 $ultra: 800;
 
@@ -14,9 +14,11 @@ $white: (100: $white, 95: rgba($white, 0.95), 80: rgba($white, 0.8), 60: rgba($w
 $accent: #F22B71;
 
 // Form Settings
-$max-width: 600px;
-$gutters: 20px;
+$max-width: 480px;
+$max-height: 400px;
+$gutters: 24px;
 
 // Custom Styles
+$fab-color: $accent;
 $button-color: $accent;
 $header-color: $accent;

@@ -1,0 +1,34 @@
+form.sp-dialog#splashForm(data-animation='fadeIn')
+			.sp-dialog-header Contact
+			.sp-dialog-content
+				.sp-form
+					.sp-form-row
+						.sp-form-group
+							input.sp-form-input(type='text'
+										required)
+							label.sp-form-label(for='') First Name
+							.sp-form-bar
+						.sp-form-group
+							input.sp-form-input(type='text'
+										required)
+							label.sp-form-label(for='') Last Name
+							.sp-form-bar
+
+					.sp-form-row
+						.sp-form-group
+							input.sp-form-input(type='email'
+										required)
+							label.sp-form-label(for='') Email Address
+							.sp-form-bar
+					.sp-form-row
+						.sp-form-group
+							textarea.sp-form-textarea(type='text'
+									required)
+							label.sp-form-label(for='') Messages...
+							.sp-form-bar
+			.sp-dialog-footer
+				button.sp-dialog-button.sp-close(data-ripple='true'
+																								data-ripple-color='#F22B71') Cancel
+				button.sp-dialog-button.sp-form-button(type='submit'
+															data-ripple='true'
+															data-ripple-color='#F22B71') Send

@@ -1,0 +1,83 @@
+// dialog
+&-dialog {
+  z-index: 110;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: none;
+  flex-direction: column;
+  background: map-get($white, 100);
+  width: 80vw;
+  max-width: $max-width;
+  height: 80vh;
+  max-height: $max-height;
+  box-sizing: border-box;
+  font-family: 'RobotoDraft', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+
+  @include elevation(3);
+
+  // Visible
+  &.visible {
+    display: flex;
+  }
+
+  // Header
+  &-header {
+    background: #FAFAFA;
+    min-height: 65px;
+    padding: $gutters $gutters ($gutters - 4);
+    font-size: 20px;
+    line-height: 1;
+    border-bottom: 1px solid #D2D2D2;
+    box-sizing: border-box;
+    font-weight: $semibold;
+  }
+
+  &-content {
+    height: 100%;
+    max-height: $max-height;
+    padding: $gutters;
+    font-size: 14px;
+    overflow: auto;
+  }
+
+  // Footer
+  &-footer {
+    @extend .sp-dialog-header;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    min-height: 55px;
+    border: 0;
+    border-top: 1px solid #D2D2D2;
+    padding: $gutters / 3;
+    font-size: 14px;
+  }
+
+  // Button
+  &-button {
+    outline: none;
+    display: inline-block;
+    background: 0;
+    border: 0;
+    border-radius: 4px;
+    padding: 12px;
+    margin: 0 0 0 8px;
+    color: $accent;
+    font-size: 14px;
+    font-weight: $semibold;
+    font-family: inherit;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    // Chrome Hack
+    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+  }
+}

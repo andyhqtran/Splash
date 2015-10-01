@@ -1,0 +1,105 @@
+// Form
+&-form {
+  // Row
+  &-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0 (-$gutters / 2);
+
+    &:last-child {
+      .sp-form-group {
+        margin: 0 ($gutters / 2);
+      }
+    }
+  }
+
+  &-group {
+    position: relative;
+    width: 100%;
+    margin: 0 ($gutters / 2) $gutters;
+  }
+
+  // Input
+  &-input {
+    outline: none;
+    z-index: 1;
+    position: relative;
+    background: none;
+    width: 100%;
+    height: 24px;
+    border: 0;
+    color: #212121;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: $regular;
+    line-height: 24px;
+
+    &:focus {
+      ~ .sp-form-label {
+        color: #9d9d9d;
+        transform: translate(-12%, -75%) scale(0.75);
+      }
+
+      ~ .sp-form-bar {
+        &:before,
+        &:after {
+          width: 50%;
+        }
+      }
+    }
+
+    &:valid {
+      ~ .sp-form-label {
+        color: #9d9d9d;
+        transform: translate(-12%, -75%) scale(0.75);
+      }
+    }
+  }
+
+  // Textarea
+  &-textarea {
+    @extend .sp-form-input;
+
+    min-height: 120px;
+  }
+
+  &-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: map-get($black, 60);
+    font-size: 16px;
+    font-weight: $regular;
+    line-height: 24px;
+    transition: 0.3s ease;
+  }
+
+  &-bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: map-get($black, 60);
+    width: 100%;
+    height: 1px;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      background: $accent;
+      width: 0;
+      height: 2px;
+      transition: .2s ease;
+    }
+
+    &:before {
+      left: 50%;
+    }
+
+    &:after {
+      right: 50%;
+    }
+  }
+}
