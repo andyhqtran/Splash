@@ -1,3 +1,10 @@
+/*!
+ * Splash v1.0
+ * Created by Andy Tran (http://andytran.me)
+ * Copyright 2015 Andy Tran.
+ * Licensed under MIT (https://github.com/andyhqtran/Splash/blob/master/LICENSE)
+ */
+
 $(document).ready(function () {
 
   // Ripple Event

@@ -1,0 +1,22 @@
+// Font Weights
+$thin: 100;
+$light: 300;
+$regular: 400;
+$semibold: 600;
+$bold: 700;
+$ultra: 800;
+
+// Colors
+$black: #000000;
+$black: (100: $black, 80: rgba($black, 0.8), 60: rgba($black, 0.6), 40: rgba($black, 0.4), 20: rgba($black, 0.2), 10: rgba($black, 0.1));
+$white: #FFFFFF;
+$white: (100: $white, 95: rgba($white, 0.95), 80: rgba($white, 0.8), 60: rgba($white, 0.6), 40: rgba($white, 0.4), 10: rgba($white, 0.1));
+$accent: #F22B71;
+
+// Form Settings
+$max-width: 600px;
+$gutters: 20px;
+
+// Custom Styles
+$button-color: $accent;
+$header-color: $accent;

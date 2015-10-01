@@ -1,17 +1,9 @@
-[data-ripple='true'] {
-  position: relative;
-  overflow: hidden;
-}
-[data-ripple='true'] .ripple {
-  position: absolute;
-  background: #FFFFFF;
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-  -webkit-animation: ripple 2s;
-          animation: ripple 2s;
-}
-
+/*!
+ * Splash v1.0
+ * Created by Andy Tran (http://andytran.me)
+ * Copyright 2015 Andy Tran.
+ * Licensed under MIT (https://github.com/andyhqtran/Splash/blob/master/LICENSE)
+ */
 .sp-button, .sp-form-button {
   z-index: 50;
   position: fixed;
@@ -227,6 +219,20 @@
   width: 100%;
   box-shadow: none;
   margin: 0 10px;
+}
+
+[data-ripple='true'] {
+  position: relative;
+  overflow: hidden;
+}
+[data-ripple='true'] .ripple {
+  position: absolute;
+  background: #FFFFFF;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  -webkit-animation: ripple 2s;
+          animation: ripple 2s;
 }
 
 @-webkit-keyframes ripple {

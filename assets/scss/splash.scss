@@ -1,36 +1,11 @@
-// Font Weights
-$thin: 100;
-$light: 300;
-$regular: 400;
-$semibold: 600;
-$bold: 700;
-$ultra: 800;
+/*!
+ * Splash v1.0
+ * Created by Andy Tran (http://andytran.me)
+ * Copyright 2015 Andy Tran.
+ * Licensed under MIT (https://github.com/andyhqtran/Splash/blob/master/LICENSE)
+ */
 
-// Colors
-$black: #000000;
-$black: (100: $black, 80: rgba($black, 0.8), 60: rgba($black, 0.6), 40: rgba($black, 0.4), 20: rgba($black, 0.2), 10: rgba($black, 0.1));
-$white: #FFFFFF;
-$white: (100: $white, 95: rgba($white, 0.95), 80: rgba($white, 0.8), 60: rgba($white, 0.6), 40: rgba($white, 0.4), 10: rgba($white, 0.1));
-$accent: #F22B71;
-
-// Form Settings
-$max-width: 600px;
-$gutters: 20px;
-
-// Ripple
-[data-ripple='true'] {
-  position: relative;
-  overflow: hidden;
-
-  .ripple {
-    position: absolute;
-    background: map-get($white, 100);
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    animation: ripple 2s;
-  }
-}
+@import "variables";
 
 // Splash
 .sp {
@@ -46,7 +21,7 @@ $gutters: 20px;
     // Styles
     outline: 0;
     display: inline-block;
-    background: $accent;
+    background: $button-color;
     border: 0;
     border-radius: 3px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
@@ -195,7 +170,7 @@ $gutters: 20px;
     // Header
     &-header {
       position: relative;
-      background: $accent;
+      background: $header-color;
       margin: (-$gutters) (-$gutters) $gutters;
       padding: $gutters;
       color: map-get($white, 100);
@@ -263,7 +238,22 @@ $gutters: 20px;
   }
 }
 
-// Ripple Animation
+// Ripple
+[data-ripple='true'] {
+  position: relative;
+  overflow: hidden;
+
+  .ripple {
+    position: absolute;
+    background: map-get($white, 100);
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    animation: ripple 2s;
+  }
+}
+
+// Animations
 @keyframes ripple {
   0% {
     transform: scale(1);
